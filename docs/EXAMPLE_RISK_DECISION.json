@@ -1,0 +1,101 @@
+{
+  "decision": "APPROVE",
+  "mode": "REVIEW_ONLY",
+  "order_executed": false,
+  "rules": [
+    {
+      "code": "EMERGENCY_HALT",
+      "passed": true,
+      "message": "Routing review enabled"
+    },
+    {
+      "code": "QUOTE_FRESHNESS",
+      "passed": true,
+      "message": "Quote age: 0.0 seconds (maximum 60)"
+    },
+    {
+      "code": "PORTFOLIO_FRESHNESS",
+      "passed": true,
+      "message": "Portfolio snapshot age: 0.0 seconds"
+    },
+    {
+      "code": "POSITION_MARK_FRESHNESS",
+      "passed": true,
+      "message": "All position marks are fresh"
+    },
+    {
+      "code": "SYNTHETIC_RECONCILIATION",
+      "passed": true,
+      "message": "Cash + synthetic marked holdings must match synthetic equity (USD, +/- $0.01)"
+    },
+    {
+      "code": "DRAWDOWN_GUARD",
+      "passed": true,
+      "message": "Current drawdown: 3.846% (buy limit: 10%)"
+    },
+    {
+      "code": "DAILY_REALIZED_LOSS",
+      "passed": true,
+      "message": "Simulated realized P&L: $-100 (buy loss cap: $300)"
+    },
+    {
+      "code": "ORDER_NOTIONAL",
+      "passed": true,
+      "message": "Requested $650.00 (limit $2500)"
+    },
+    {
+      "code": "CASH_AVAILABLE",
+      "passed": true,
+      "message": "Cash $7500 vs requested $650.00"
+    },
+    {
+      "code": "SYMBOL_EXPOSURE",
+      "passed": true,
+      "message": "Projected symbol exposure $650.00 (limit $2500)"
+    },
+    {
+      "code": "GROSS_EXPOSURE",
+      "passed": true,
+      "message": "Projected gross exposure $3150.00 (limit $8000)"
+    },
+    {
+      "code": "POSITION_COUNT",
+      "passed": true,
+      "message": "Projected open position count 3 (limit 8)"
+    },
+    {
+      "code": "PROTECTIVE_STOP",
+      "passed": true,
+      "message": "BUY requires a stop strictly below entry"
+    },
+    {
+      "code": "PROFIT_TARGET",
+      "passed": true,
+      "message": "BUY requires a target strictly above entry"
+    },
+    {
+      "code": "RISK_PER_TRADE",
+      "passed": true,
+      "message": "Proposed stop-distance risk $10.00 (limit $100.0)"
+    },
+    {
+      "code": "REWARD_RISK",
+      "passed": true,
+      "message": "Proposed reward/risk 3.000 (minimum 1.5)"
+    }
+  ],
+  "metrics": {
+    "equity_usd": "10000",
+    "cash_usd": "7500",
+    "order_notional_usd": "650.00",
+    "estimated_stop_risk_usd": "10.00",
+    "risk_budget_usd": "100.0",
+    "reward_risk_ratio": "3",
+    "current_gross_exposure_usd": "2500.00",
+    "projected_gross_exposure_usd": "3150.00",
+    "projected_symbol_exposure_usd": "650.00",
+    "drawdown_pct": "3.846153846153846153846153846",
+    "daily_realized_pnl_usd": "-100"
+  },
+  "max_suggested_buy_quantity": "0.038461"
+}

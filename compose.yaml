@@ -1,0 +1,14 @@
+services:
+  riskguard:
+    build: .
+    env_file: .env
+    environment:
+      RG_DB_PATH: /data/riskguard.sqlite
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - riskguard-state:/data
+    restart: unless-stopped
+
+volumes:
+  riskguard-state:
